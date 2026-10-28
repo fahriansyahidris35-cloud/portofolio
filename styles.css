@@ -1,0 +1,391 @@
+/* PENGATURAN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b1120;
+    color: #e5e7eb;
+    line-height: 1.6;
+}
+
+/* HEADER DAN NAVIGASI */
+header {
+    background-color: #111827;
+    border-bottom: 1px solid #263449;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+}
+
+span {
+    color: #38bdf8;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #d1d5db;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* BUAT HOME */
+.hero {
+    min-height: 500px;
+    padding: 100px 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    background: linear-gradient(135deg, #0b1120, #172554);
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.hero-photo {
+    flex: 0 0 280px;
+}
+
+.hero-photo img {
+    display: block;
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.label {
+    color: #38bdf8;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 8px;
+    overflow-wrap: anywhere;
+}
+
+.hero h2 {
+    font-size: 25px;
+    color: #cbd5e1;
+}
+
+.description {
+    max-width: 600px;
+    margin: 20px 0;
+    color: #9ca3af;
+}
+
+/* TOMBOL */
+.btn {
+    display: inline-block;
+    background-color: #0284c7;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #38bdf8;
+    color: #0b1120;
+    transform: translateY(-2px);
+}
+
+/* BAGIAN UMUM */
+.section {
+    padding: 70px 8%;
+}
+
+.section h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.section > p {
+    max-width: 750px;
+    color: #9ca3af;
+}
+
+p {
+    margin-bottom: 25px;
+}
+
+/* JENJANG PENDIDIKAN */
+.education-list {
+    display: grid;
+    gap: 20px;
+    max-width: 800px;
+    margin-top: 25px;
+}
+
+.education-item {
+    padding: 22px;
+    background-color: #111827;
+    border: 1px solid #263449;
+    border-left: 4px solid #38bdf8;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.education-item:hover {
+    border-color: #38bdf8;
+    transform: translateY(-3px);
+}
+
+.education-item h3 {
+    color: #38bdf8;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.education-item h3 i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.education-item h4 {
+    color: #e5e7eb;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.education-item p {
+    color: #9ca3af;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+/* SKILLS */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.skills-box {
+    padding: 20px;
+    border: 1px solid #304767;
+    border-radius: 12px;
+    background: #111c2e;
+}
+
+.skills-box summary {
+    color: #60a5fa;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.skills-content {
+    margin-top: 20px;
+}
+
+.skills-content p {
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    background: #1c2d45;
+    color: #ffffff;
+}
+
+/* PROJECT */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    padding: 25px;
+    background-color: #111827;
+    border: 1px solid #263449;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    border-color: #38bdf8;
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    margin-bottom: 12px;
+    color: #38bdf8;
+}
+
+.project-card p {
+    color: #9ca3af;
+}
+
+.project-tech {
+    margin-top: 15px;
+    color: #38bdf8;
+}
+
+/* CONTACT */
+#contact h2 {
+    margin-bottom: 6px;
+}
+
+#contactInfo {
+    margin-top: 20px;
+}
+
+#contactInfo p {
+    margin-bottom: 10px;
+}
+
+#contactInfo a {
+    color: #38bdf8;
+}
+
+/* FOOTER */
+footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #111827;
+    border-top: 1px solid #263449;
+    color: #9ca3af;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+/* TOMBOL MEDIA SOSIAL */
+#contactInfo {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 18px;
+    background-color: #111c2e;
+    border: 1px solid #304767;
+    border-radius: 8px;
+    color: #e5e7eb;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-link i {
+    font-size: 20px;
+    color: #38bdf8;
+}
+
+.contact-link:hover {
+    border-color: #38bdf8;
+    background-color: #172554;
+    transform: translateY(-3px);
+}
+
+/* UMUM */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* TAMPILAN TABLET DAN HP */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 5%;
+        gap: 25px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-photo {
+        width: 100%;
+        max-width: 250px;
+        flex: auto;
+    }
+
+    .hero-photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .hero h1 {
+        font-size: clamp(28px, 7vw, 38px);
+    }
+
+    .hero h2 {
+        font-size: clamp(18px, 4vw, 23px);
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .section {
+        padding: 45px 5%;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}
